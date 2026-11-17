@@ -1,0 +1,27 @@
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none}
+html,body{margin:0;height:100%;overflow:hidden;background:#87ceeb;font-family:system-ui,sans-serif;touch-action:none}
+canvas#c{position:fixed;inset:0;width:100%;height:100%;display:block}
+#hud{position:fixed;top:10px;left:12px;color:#fff;font-weight:700;text-shadow:0 2px 4px #000;pointer-events:none;z-index:2}
+#score{font-size:28px}#best{font-size:14px;opacity:.9}
+#gauge{width:130px;height:130px;display:block;margin-top:6px;background:radial-gradient(circle,#000a 60%,#0000 72%)}
+#nitroWrap{display:flex;align-items:center;gap:6px;font-size:11px;margin-top:2px}
+#nitroBar{width:90px;height:9px;border:1px solid #fff9;border-radius:5px;background:#0007;overflow:hidden}
+#nitroFill{height:100%;width:100%;background:linear-gradient(90deg,#00b0ff,#76ff03)}
+#side{position:fixed;top:10px;right:10px;z-index:4;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+#btns{display:flex;gap:6px}
+#btns button{width:42px;height:42px;border-radius:12px;border:2px solid #fff8;background:#0007;color:#fff;font-size:18px;cursor:pointer}
+#btns button:active{background:#ff9800aa}
+#btns button.off{opacity:.45}
+#minimap{width:70px;height:140px;border:2px solid #fff8;border-radius:8px;background:#0009}
+#mmLabel{font-size:9px;color:#fff;opacity:.8;letter-spacing:1px;text-shadow:0 1px 2px #000}
+#menu,#pause{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(0,0,0,.6);color:#fff;text-align:center;padding:20px;z-index:5}
+#pause{display:none;z-index:6}
+#menu h1,#pause h1{font-size:36px;margin:0 0 10px}
+.small{font-size:14px;opacity:.85;line-height:1.5}
+#start,#bResume,#bQuit{font-size:22px;padding:12px 36px;border:0;border-radius:30px;background:#ff9800;color:#fff;font-weight:700;cursor:pointer;margin-top:12px}
+#bQuit.sec{background:#455a64;font-size:16px}
+#touch{position:fixed;bottom:16px;left:0;right:0;display:flex;justify-content:space-between;padding:0 10px;pointer-events:none;z-index:3}
+#touch button{pointer-events:auto;min-width:56px;height:60px;border-radius:16px;border:2px solid #fff8;background:#0006;color:#fff;font-weight:700;font-size:13px;padding:0 6px}
+#touch button:active{background:#ff9800aa}
+#bn{background:#0277bd88!important}
+@media (hover:hover) and (pointer:fine){#touch{display:none}}

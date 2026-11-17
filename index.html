@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>Moto no Trânsito 3D</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="hud">
+  <div id="score">0 m</div>
+  <div id="best">Recorde: 0</div>
+  <canvas id="gauge" width="260" height="260"></canvas>
+  <div id="nitroWrap"><span>NITRO</span><div id="nitroBar"><div id="nitroFill"></div></div></div>
+</div>
+
+<div id="side">
+  <div id="btns">
+    <button id="bPause" title="Pausar (P)">⏸</button>
+    <button id="bMusic" title="Música (M)">🎵</button>
+    <button id="bSfx" title="Sons (N)">🔊</button>
+  </div>
+  <canvas id="minimap" width="140" height="280"></canvas>
+  <div id="mmLabel">MINIMAPA</div>
+</div>
+
+<div id="menu">
+  <h1>🏍️ Moto no Trânsito</h1>
+  <p id="msg">Desvie dos carros e vá o mais longe possível!</p>
+  <p class="small">← → ou A/D: mudar de faixa · ↑/W: acelerar · ↓/S: frear · Shift/Espaço: nitro<br>P: pausar · M: música<br>Celular: deslize ou use os botões</p>
+  <button id="start">Jogar</button>
+</div>
+
+<div id="pause">
+  <h1>⏸ Pausado</h1>
+  <button id="bResume">Continuar</button>
+  <button id="bQuit" class="sec">Sair para o menu</button>
+</div>
+
+<div id="touch">
+  <button id="bl">◀</button>
+  <button id="bb">FREAR</button>
+  <button id="bn">NITRO</button>
+  <button id="ba">ACEL</button>
+  <button id="br">▶</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
